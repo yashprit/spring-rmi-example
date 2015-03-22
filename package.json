@@ -1,0 +1,45 @@
+{
+  "name": "git-remote-add",
+  "version": "0.0.0-alpha",
+  "description": "git remote add",
+  "bugs": {
+    "url": "yashprit/git-remote-add/issues"
+  },
+  "author": {
+    "url": "yashprit.github.io",
+    "name": "Yashprit",
+    "email": "yashprit@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yashprit/git-remote-add"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "git-remote-add",
+    "git",
+    "remote",
+    "add",
+    "git remote add",
+    "npm",
+    "node",
+    "javascript"
+  ],
+  "dependencies": {
+    "git-repo-url": "0.0.0-beta",
+    "minimist": "^1.1.1"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "git-remote-add": "cli.js"
+  }
+}
