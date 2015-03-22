@@ -9,7 +9,6 @@
 $ npm install --save git-remote-add
 ```
 
-
 ## Usage
 
 ### JavaScript
