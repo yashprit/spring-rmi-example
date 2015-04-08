@@ -1,5 +1,7 @@
 # spring-rmi-example
 
+*project is exported from code.google.com/p/springrmiexample with minor modification from my side*
+
 > This project is an example of how to set up RMI server and client with help of Spring.
 
 This project contains 2 sub-projects:
@@ -9,13 +11,13 @@ This project contains 2 sub-projects:
 Server Spring configuration looks following:
 
 ```java
-<bean id="helloService" class="com.rmi.server.example.HelloServiceImpl">
+<bean id="helloService" class="com.etymgiko.springrmiexample.server.HelloServiceImpl">
 </bean>
 
 <bean id="rmiServiceExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
     <property name="serviceName" value="HelloService"/>
     <property name="service" ref="helloService"/>
-    <property name="serviceInterface" value="com.rmi.server.example.shared.HelloService"/>
+    <property name="serviceInterface" value="com.etymgiko.springrmiexample.shared.HelloService"/>
     <!-- defaults to 1099 -->
     <property name="registryPort" value="1099"/>
 </bean>
